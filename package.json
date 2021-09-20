@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\"",
         "start": "node ./dist/server/server.js",
-        "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src"
+        "postinstall": "tsc"
     },
     "keywords": [
         "pong",
