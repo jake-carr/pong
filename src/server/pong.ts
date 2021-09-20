@@ -340,7 +340,7 @@ export default class Pong {
             frame();
         };
 
-        this._intervalId = setInterval(gameLoop, 60);
+        this._intervalId = setInterval(gameLoop, 90);
     }
 
     public startMultiPlayerGame(player1: Player, player2: Player) {
