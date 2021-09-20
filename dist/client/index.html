@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pong</title>
+    </head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <body>
+        <div id="top-section">
+            <div id="top-sub-section">
+                <div id="welcome-container">
+                    <div id="welcome-message"></div>
+                </div>
+                <div id="players-online"></div>
+                <div id="client-status"></div>
+            </div>
+            <div id="top-sub-section">
+                <div class="container" id="game-buttons"></div>
+            </div>
+        </div>
+        <div id="bottom-section">
+            <div id="canvas-and-scoreboard-container">
+                <canvas id="CANVAS" width="700" height="500"></canvas>
+                <div id="scoreboard"></div>
+            </div>
+            <div id="chat-container">
+                <div id="chat-messages"></div>
+                <div id="chat-input"></div>
+            </div>
+        </div>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script type="module" src="client.js"></script>
+    </body>
+</html>
