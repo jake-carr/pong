@@ -5,8 +5,8 @@
     "main": "src/server/server.ts",
     "scripts": {
         "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\"",
-        "start": "node ./dist/server/server.js",
-        "postinstall": "tsc && mv -i -v src/client dist/ && rm -v -rf src"
+        "postinstall": "tsc -p ./src/server && tsc -p ./src/client ",
+        "start": "node ./dist/server/server.js"
     },
     "keywords": [
         "pong",
